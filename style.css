@@ -124,9 +124,10 @@ min-height: 100vh;
 display: flex;
 align-items: center;
 
-background-image: url("./hero.png");
+background-image: url("/minecraft-server-website/hero.png");
 background-size: cover;
 background-position: center;
+background-repeat: no-repeat;
 ```
 
 }
@@ -406,6 +407,7 @@ overflow: hidden;
 background-color: var(--panel);
 background-size: cover;
 background-position: center;
+background-repeat: no-repeat;
 
 border: 1px solid var(--border);
 ```
@@ -430,15 +432,15 @@ background:
 }
 
 .survival-card {
-    background-image: url("./survival.png");
+background-image: url("/minecraft-server-website/survival.png");
 }
 
 .build-card {
-    background-image: url("./builds.png");
+background-image: url("/minecraft-server-website/builds.png");
 }
 
 .explore-card {
-    background-image: url("./world.png");
+background-image: url("/minecraft-server-website/world.png");
 }
 
 .card-number {
@@ -503,10 +505,11 @@ background-image:
         rgba(8, 9, 7, 0.55),
         rgba(8, 9, 7, 0.2)
     ),
-    url("./world.png");
+    url("/minecraft-server-website/world.png");
 
 background-size: cover;
 background-position: center;
+background-repeat: no-repeat;
 ```
 
 }
