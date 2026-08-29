@@ -1,747 +1,1179 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap');
+<!DOCTYPE html>
 
-:root {
---background: #0b0c0a;
---background-light: #11130f;
---panel: #171914;
---text: #eee9dc;
---muted: #aaa697;
---accent: #b98a4b;
---accent-light: #d4aa6a;
---border: rgba(238, 233, 220, 0.12);
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  }
-
-html {
-scroll-behavior: smooth;
-}
-
-body {
-background: var(--background);
-color: var(--text);
-font-family: "Inter", sans-serif;
-}
-
-a {
-color: inherit;
-text-decoration: none;
-}
-
-/* ================= NAVBAR ================= */
-
-.navbar {
-position: absolute;
-z-index: 10;
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 ```
-width: 100%;
-padding: 28px 6%;
+<title>BushwhackSurvival | Minecraft Survival SMP</title>
+<meta name="description" content="BushwhackSurvival is a medieval and steampunk Minecraft survival SMP. Explore, build, trade, and create your own story.">
 
-display: flex;
-align-items: center;
-justify-content: space-between;
+<link rel="stylesheet" href="style.css">
 ```
 
-}
+</head>
 
-.logo {
-font-family: "Cinzel", serif;
-font-weight: 800;
-letter-spacing: 2px;
+<body>
 
 ```
-display: flex;
-flex-direction: column;
-line-height: 1;
+<!-- ================= NAVIGATION ================= -->
+
+<header class="navbar">
+
+    <a href="#home" class="logo">
+        <span>BUSHWHACK</span>
+        <small>SURVIVAL</small>
+    </a>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#gazette">Gazette</a>
+        <a href="#world">World</a>
+        <a href="#faq">FAQ</a>
+    </nav>
+
+    <!-- CHANGE THIS LINK TO YOUR REAL STORE -->
+    <a href="https://YOUR-STORE-LINK-HERE.com" class="nav-button" target="_blank">
+        STORE
+    </a>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section id="home" class="hero">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <div class="release-badge">
+            ● RELEASING SOON
+        </div>
+
+        <p class="eyebrow">MINECRAFT SURVIVAL SMP</p>
+
+        <h1>
+            BUILD YOUR
+            <span>LEGACY.</span>
+        </h1>
+
+        <p class="hero-description">
+            A medieval and steampunk survival world where
+            players explore, build, trade, and create their
+            own stories.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#about" class="button primary">
+                DISCOVER BUSHWHACK
+            </a>
+
+            <a href="#discord" class="button secondary">
+                JOIN DISCORD
+            </a>
+
+        </div>
+
+        <div class="server-status">
+
+            <span class="status-dot"></span>
+
+            <div>
+                <strong>SERVER STATUS</strong>
+                <small>Releasing Soon</small>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="scroll-indicator">
+        SCROLL TO EXPLORE
+        <span>↓</span>
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about" class="about">
+
+    <div class="section-label">
+        01 / BUSHWHACKSURVIVAL
+    </div>
+
+    <div class="about-grid">
+
+        <div class="about-title">
+
+            <h2>
+                WHAT IS
+                <span>BUSHWHACK?</span>
+            </h2>
+
+        </div>
+
+        <div class="about-text">
+
+            <p class="large-text">
+                BushwhackSurvival is a community-driven
+                Minecraft survival SMP built around freedom,
+                exploration, and creativity.
+            </p>
+
+            <p>
+                Start with nothing and build your way up.
+                Establish a home, create settlements, trade
+                with other players, explore the wilderness,
+                and leave your mark on a world shaped by
+                its community.
+            </p>
+
+            <p>
+                Inspired by medieval worlds and the machinery
+                of the industrial age, Bushwhack combines
+                classic Minecraft survival with a distinct
+                medieval-steampunk atmosphere.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="about-points">
+
+        <div>
+            <span>01</span>
+            <h3>FREEDOM</h3>
+            <p>
+                Play your own way. There is no predefined
+                path to follow.
+            </p>
+        </div>
+
+        <div>
+            <span>02</span>
+            <h3>COMMUNITY</h3>
+            <p>
+                Work together, create towns, trade, and
+                build something larger than yourself.
+            </p>
+        </div>
+
+        <div>
+            <span>03</span>
+            <h3>CREATIVITY</h3>
+            <p>
+                From small cabins to massive industrial
+                cities, your imagination sets the limit.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FEATURES ================= -->
+
+<section id="features" class="features">
+
+    <div class="section-heading">
+
+        <div class="section-label">
+            02 / SURVIVAL
+        </div>
+
+        <h2>
+            YOUR WORLD.
+            <span>YOUR STORY.</span>
+        </h2>
+
+        <p>
+            No predefined path. Decide what you want to become.
+        </p>
+
+    </div>
+
+
+    <div class="feature-grid">
+
+        <article class="feature-card survival-card">
+
+            <div class="card-number">01</div>
+
+            <div class="card-content">
+
+                <h3>TRUE SURVIVAL</h3>
+
+                <p>
+                    Gather resources, explore the wilderness,
+                    build your base, and survive in a persistent
+                    Minecraft world.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <article class="feature-card build-card">
+
+            <div class="card-number">02</div>
+
+            <div class="card-content">
+
+                <h3>BUILD & CREATE</h3>
+
+                <p>
+                    From medieval villages to massive
+                    steampunk factories, build whatever
+                    you can imagine.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <article class="feature-card explore-card">
+
+            <div class="card-number">03</div>
+
+            <div class="card-content">
+
+                <h3>EXPLORE</h3>
+
+                <p>
+                    Venture beyond civilization and discover
+                    new landscapes, resources, and places
+                    waiting to be explored.
+                </p>
+
+            </div>
+
+        </article>
+
+    </div>
+
+
+    <div class="feature-list">
+
+        <div class="feature-row">
+            <span>01</span>
+            <strong>PLAYER-DRIVEN WORLD</strong>
+            <p>Build towns, roads, businesses, and communities.</p>
+        </div>
+
+        <div class="feature-row">
+            <span>02</span>
+            <strong>PLAYER ECONOMY</strong>
+            <p>Trade resources and create your own businesses.</p>
+        </div>
+
+        <div class="feature-row">
+            <span>03</span>
+            <strong>COMMUNITY PROJECTS</strong>
+            <p>Work together on projects that shape the world.</p>
+        </div>
+
+        <div class="feature-row">
+            <span>04</span>
+            <strong>MEDIEVAL × STEAMPUNK</strong>
+            <p>A unique visual identity inspired by two eras.</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= GAZETTE ================= -->
+
+<section id="gazette" class="gazette">
+
+    <div class="gazette-heading">
+
+        <div class="section-label">
+            03 / BUSHWHACK GAZETTE
+        </div>
+
+        <h2>
+            THE ROAD TO
+            <span>LAUNCH.</span>
+        </h2>
+
+        <p>
+            Follow the development of BushwhackSurvival
+            from its first foundations to opening day.
+        </p>
+
+    </div>
+
+
+    <div class="timeline">
+
+        <div class="timeline-item complete">
+
+            <div class="timeline-marker">
+                ✓
+            </div>
+
+            <div class="timeline-content">
+
+                <small>AUGUST 2026</small>
+
+                <h3>THE IDEA</h3>
+
+                <p>
+                    BushwhackSurvival begins development.
+                    The world, theme, and vision are established.
+                </p>
+
+                <span class="timeline-status">
+                    COMPLETED
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="timeline-item complete">
+
+            <div class="timeline-marker">
+                ✓
+            </div>
+
+            <div class="timeline-content">
+
+                <small>AUGUST 2026</small>
+
+                <h3>THE WEBSITE</h3>
+
+                <p>
+                    The official BushwhackSurvival website
+                    goes online.
+                </p>
+
+                <span class="timeline-status">
+                    COMPLETED
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="timeline-item active">
+
+            <div class="timeline-marker">
+                ◐
+            </div>
+
+            <div class="timeline-content">
+
+                <small>COMING SOON</small>
+
+                <h3>WORLD DEVELOPMENT</h3>
+
+                <p>
+                    Spawn, settlements, infrastructure,
+                    and the first major builds begin taking shape.
+                </p>
+
+                <span class="timeline-status">
+                    IN DEVELOPMENT
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+            <div class="timeline-marker">
+                04
+            </div>
+
+            <div class="timeline-content">
+
+                <small>COMING SOON</small>
+
+                <h3>TESTING</h3>
+
+                <p>
+                    Gameplay systems are tested and refined
+                    before the server opens to the public.
+                </p>
+
+                <span class="timeline-status">
+                    UPCOMING
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+            <div class="timeline-marker">
+                05
+            </div>
+
+            <div class="timeline-content">
+
+                <small>COMING SOON</small>
+
+                <h3>LAUNCH DAY</h3>
+
+                <p>
+                    The frontier opens. Your story begins.
+                </p>
+
+                <span class="timeline-status">
+                    UPCOMING
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= WORLD ================= -->
+
+<section id="world" class="world">
+
+    <div class="world-image"></div>
+
+    <div class="world-content">
+
+        <div class="section-label">
+            04 / THE FRONTIER
+        </div>
+
+        <h2>
+            THERE'S ALWAYS
+            <span>SOMETHING BEYOND.</span>
+        </h2>
+
+        <p>
+            Build roads between settlements. Establish towns.
+            Create massive industrial projects. Explore the
+            wilderness.
+        </p>
+
+        <p>
+            The world belongs to the players who shape it.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FAQ ================= -->
+
+<section id="faq" class="faq">
+
+    <div class="section-label">
+        05 / FAQ
+    </div>
+
+    <div class="faq-heading">
+
+        <h2>
+            FREQUENTLY ASKED
+            <span>QUESTIONS.</span>
+        </h2>
+
+        <p>
+            Everything you need to know before joining
+            BushwhackSurvival.
+        </p>
+
+    </div>
+
+
+    <div class="faq-list">
+
+        <details>
+            <summary>
+                When is BushwhackSurvival releasing?
+                <span>+</span>
+            </summary>
+
+            <p>
+                BushwhackSurvival is currently in development.
+                Join our Discord for the latest release updates.
+            </p>
+
+        </details>
+
+
+        <details>
+            <summary>
+                What version is the server?
+                <span>+</span>
+            </summary>
+
+            <p>
+                BushwhackSurvival is currently being developed
+                for Minecraft Java Edition 26.2.
+            </p>
+
+        </details>
+
+
+        <details>
+            <summary>
+                Do I need mods to play?
+                <span>+</span>
+            </summary>
+
+            <p>
+                Server requirements will be announced before
+                launch. Check Discord for the latest information.
+            </p>
+
+        </details>
+
+
+        <details>
+            <summary>
+                Is BushwhackSurvival free?
+                <span>+</span>
+            </summary>
+
+            <p>
+                The server is intended to be free to join.
+                Optional purchases may be available through
+                the official store.
+            </p>
+
+        </details>
+
+
+        <details>
+            <summary>
+                How can I stay updated?
+                <span>+</span>
+            </summary>
+
+            <p>
+                Join the BushwhackSurvival Discord for
+                announcements, development updates, and launch news.
+            </p>
+
+        </details>
+
+
+        <details>
+            <summary>
+                Can I create my own town?
+                <span>+</span>
+            </summary>
+
+            <p>
+                BushwhackSurvival is designed around player
+                creativity and community. More information about
+                towns and server systems will be announced soon.
+            </p>
+
+        </details>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PLAY ================= -->
+
+<section id="play" class="play">
+
+    <div class="play-content">
+
+        <div class="release-badge">
+            ● COMING SOON
+        </div>
+
+        <h2>
+            READY TO
+            <span>WHACK?</span>
+        </h2>
+
+        <p>
+            BushwhackSurvival is currently preparing for launch.
+            Join the community and be there when the frontier opens.
+        </p>
+
+        <div class="server-box">
+
+            <small>SERVER ADDRESS</small>
+
+            <div class="server-ip">
+                RELEASING SOON
+            </div>
+
+        </div>
+
+        <a href="#discord" class="button primary">
+            JOIN THE COMMUNITY
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= STORE ================= -->
+
+<section class="store">
+
+    <div class="store-content">
+
+        <div class="section-label">
+            SUPPORT THE SERVER
+        </div>
+
+        <h2>
+            VISIT THE
+            <span>STORE.</span>
+        </h2>
+
+        <p>
+            Support BushwhackSurvival and check out
+            available cosmetics and other optional items.
+        </p>
+
+        <!-- CHANGE THIS LINK TO YOUR REAL STORE -->
+        <a
+            href="https://YOUR-STORE-LINK-HERE.com"
+            class="button primary"
+            target="_blank"
+        >
+            VISIT STORE →
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= DISCORD ================= -->
+
+<section id="discord" class="discord">
+
+    <div>
+
+        <div class="section-label">
+            06 / COMMUNITY
+        </div>
+
+        <h2>
+            JOIN THE
+            <span>FRONTIER.</span>
+        </h2>
+
+        <p>
+            Get announcements, development updates,
+            sneak peeks, and server news.
+        </p>
+
+    </div>
+
+    <a href="#" class="button secondary large">
+        JOIN DISCORD →
+    </a>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-logo">
+        BUSHWHACK<span>SURVIVAL</span>
+    </div>
+
+    <p>
+        © 2026 BushwhackSurvival. Not affiliated with Mojang Studios.
+    </p>
+
+    <div class="footer-links">
+
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#gazette">Gazette</a>
+        <a href="#faq">FAQ</a>
+
+    </div>
+
+</footer>
 ```
 
-}
+</body>
+</html>
 
-.logo span {
-font-size: 21px;
-}
+/* ================= ABOUT ================= */
 
-.logo small {
-margin-top: 5px;
-color: var(--accent-light);
-
-```
-font-size: 9px;
-letter-spacing: 5px;
-```
-
-}
-
-.navbar nav {
-display: flex;
-gap: 34px;
-}
-
-.navbar nav a {
-color: #d4d0c4;
-font-size: 13px;
-font-weight: 600;
-transition: 0.25s;
-}
-
-.navbar nav a:hover {
-color: var(--accent-light);
-}
-
-.nav-button {
-padding: 12px 20px;
-
-```
-border: 1px solid var(--accent);
-color: var(--accent-light);
-
-font-size: 11px;
-font-weight: 700;
-letter-spacing: 1px;
-
-transition: 0.25s;
-```
-
-}
-
-.nav-button:hover {
-background: var(--accent);
-color: #111;
-}
-
-/* ================= HERO ================= */
-
-.hero {
-position: relative;
-min-height: 100vh;
-
-```
-display: flex;
-align-items: center;
-
-background-image: url("/minecraft-server-website/hero.png");
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
-```
-
-}
-
-.hero-overlay {
-position: absolute;
-inset: 0;
-
-```
-background:
-    linear-gradient(
-        90deg,
-        rgba(7, 8, 6, 0.94) 0%,
-        rgba(7, 8, 6, 0.70) 45%,
-        rgba(7, 8, 6, 0.25) 100%
-    ),
-    linear-gradient(
-        0deg,
-        rgba(7, 8, 6, 0.85),
-        transparent 45%
-    );
-```
-
-}
-
-.hero-content {
-position: relative;
-z-index: 2;
-
-```
-max-width: 760px;
-margin-left: 8%;
-padding-top: 70px;
-```
-
-}
-
-.release-badge {
-display: inline-block;
-
-```
-padding: 8px 13px;
-margin-bottom: 24px;
-
-border: 1px solid rgba(185, 138, 75, 0.5);
-
-color: var(--accent-light);
-
-font-size: 10px;
-font-weight: 700;
-letter-spacing: 2px;
-```
-
-}
-
-.eyebrow,
-.section-label {
-color: var(--accent-light);
-
-```
-font-size: 11px;
-font-weight: 700;
-letter-spacing: 4px;
-```
-
-}
-
-.hero h1 {
-margin-top: 12px;
-
-```
-font-family: "Cinzel", serif;
-font-size: clamp(55px, 7vw, 105px);
-line-height: 0.95;
-
-letter-spacing: -3px;
-```
-
-}
-
-.hero h1 span,
-h2 span {
-color: var(--accent-light);
-}
-
-.hero-description {
-max-width: 580px;
-margin: 30px 0;
-
-```
-color: #c3bfb3;
-font-size: 17px;
-line-height: 1.8;
-```
-
-}
-
-.hero-buttons {
-display: flex;
-gap: 13px;
-flex-wrap: wrap;
-}
-
-.button {
-display: inline-flex;
-align-items: center;
-justify-content: center;
-
-```
-padding: 15px 25px;
-
-font-size: 11px;
-font-weight: 800;
-letter-spacing: 1.5px;
-
-transition: 0.25s;
-```
-
-}
-
-.button.primary {
-background: var(--accent);
-color: #111;
-}
-
-.button.primary:hover {
-background: var(--accent-light);
-transform: translateY(-2px);
-}
-
-.button.secondary {
-border: 1px solid rgba(238, 233, 220, 0.3);
-background: rgba(10, 10, 8, 0.35);
-color: var(--text);
-}
-
-.button.secondary:hover {
-border-color: var(--accent);
-color: var(--accent-light);
-}
-
-.server-status {
-display: flex;
-align-items: center;
-gap: 10px;
-
-```
-margin-top: 55px;
-```
-
-}
-
-.status-dot {
-width: 8px;
-height: 8px;
-
-```
-border-radius: 50%;
-background: #d29a50;
-
-box-shadow: 0 0 12px #d29a50;
-```
-
-}
-
-.server-status strong,
-.server-status small {
-display: block;
-}
-
-.server-status strong {
-font-size: 9px;
-letter-spacing: 2px;
-}
-
-.server-status small {
-margin-top: 3px;
-color: var(--muted);
-}
-
-.scroll-indicator {
-position: absolute;
-z-index: 2;
-
-```
-right: 6%;
-bottom: 35px;
-
-color: #aaa697;
-font-size: 9px;
-letter-spacing: 3px;
-```
-
-}
-
-.scroll-indicator span {
-margin-left: 10px;
-color: var(--accent-light);
-}
-
-/* ================= INTRO ================= */
-
-.intro {
-padding: 130px 8%;
+.about {
+padding: 150px 8%;
 background: var(--background-light);
 }
 
-.intro-grid {
+.about-grid {
 display: grid;
 grid-template-columns: 1fr 1fr;
 gap: 100px;
-
-```
-margin-top: 50px;
-```
-
+margin-top: 55px;
 }
 
-h2 {
-font-family: "Cinzel", serif;
-font-size: clamp(40px, 5vw, 70px);
-line-height: 1.05;
+.about-title h2 {
+max-width: 600px;
 }
 
-.intro p {
-margin-bottom: 25px;
+.about-text {
+max-width: 600px;
+}
 
-```
+.about-text p {
+margin-bottom: 28px;
 color: var(--muted);
 line-height: 1.9;
+}
+
+.about-text .large-text {
+color: var(--text);
+font-size: 20px;
+line-height: 1.7;
+}
+
+.about-points {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 25px;
+margin-top: 100px;
+}
+
+.about-points > div {
+padding: 35px;
+border-top: 1px solid var(--border);
+}
+
+.about-points span {
+color: var(--accent-light);
+font-family: "Cinzel", serif;
+font-size: 13px;
+}
+
+.about-points h3 {
+margin: 18px 0 12px;
+font-family: "Cinzel", serif;
+font-size: 20px;
+}
+
+.about-points p {
+color: var(--muted);
+font-size: 13px;
+line-height: 1.7;
+}
+
+/* ================= FEATURE LIST ================= */
+
+.feature-list {
+margin-top: 90px;
+border-top: 1px solid var(--border);
+}
+
+.feature-row {
+display: grid;
+grid-template-columns: 70px 1fr 1fr;
+align-items: center;
+gap: 30px;
+
+```
+padding: 27px 10px;
+
+border-bottom: 1px solid var(--border);
 ```
 
 }
 
-/* ================= FEATURES ================= */
-
-.features {
-padding: 130px 8%;
+.feature-row span {
+color: var(--accent-light);
+font-family: "Cinzel", serif;
 }
 
-.section-heading {
+.feature-row strong {
+font-family: "Cinzel", serif;
+font-size: 15px;
+}
+
+.feature-row p {
+color: var(--muted);
+font-size: 13px;
+line-height: 1.6;
+}
+
+/* ================= GAZETTE ================= */
+
+.gazette {
+padding: 150px 8%;
+background: var(--background-light);
+}
+
+.gazette-heading {
 max-width: 700px;
 }
 
-.section-heading h2 {
-margin: 18px 0;
+.gazette-heading h2 {
+margin: 20px 0;
 }
 
-.section-heading p {
+.gazette-heading p {
 color: var(--muted);
+line-height: 1.8;
 }
 
-.feature-grid {
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-gap: 18px;
-
-```
-margin-top: 60px;
-```
-
-}
-
-.feature-card {
-min-height: 430px;
-
-```
+.timeline {
+max-width: 850px;
+margin: 80px auto 0;
 position: relative;
-
-display: flex;
-align-items: flex-end;
-
-padding: 32px;
-
-overflow: hidden;
-
-background-color: var(--panel);
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
-
-border: 1px solid var(--border);
-```
-
 }
 
-.feature-card::after {
+.timeline::before {
 content: "";
 
 ```
 position: absolute;
-inset: 0;
 
-background:
-    linear-gradient(
-        0deg,
-        rgba(5, 6, 5, 0.98),
-        rgba(5, 6, 5, 0.05)
-    );
-```
-
-}
-
-.survival-card {
-background-image: url("/minecraft-server-website/survival.png");
-}
-
-.build-card {
-background-image: url("/minecraft-server-website/builds.png");
-}
-
-.explore-card {
-background-image: url("/minecraft-server-website/world.png");
-}
-
-.card-number {
-position: absolute;
-top: 25px;
 left: 25px;
-z-index: 2;
+top: 0;
+bottom: 0;
 
-```
-color: var(--accent-light);
-font-family: "Cinzel", serif;
-font-size: 13px;
+width: 1px;
+
+background: var(--border);
 ```
 
 }
 
-.card-content {
+.timeline-item {
+position: relative;
+
+```
+display: grid;
+grid-template-columns: 52px 1fr;
+gap: 30px;
+
+padding-bottom: 60px;
+```
+
+}
+
+.timeline-marker {
 position: relative;
 z-index: 2;
-}
-
-.card-content h3 {
-font-family: "Cinzel", serif;
-font-size: 25px;
-}
-
-.card-content p {
-margin-top: 12px;
 
 ```
-color: #b6b1a4;
-font-size: 13px;
-line-height: 1.7;
-```
+width: 51px;
+height: 51px;
 
-}
-
-/* ================= WORLD ================= */
-
-.world {
-position: relative;
-min-height: 650px;
-
-```
 display: flex;
 align-items: center;
+justify-content: center;
 
-overflow: hidden;
+border: 1px solid var(--border);
+background: var(--background);
+
+color: var(--muted);
+
+font-family: "Cinzel", serif;
+font-size: 13px;
 ```
 
 }
 
-.world-image {
-position: absolute;
-inset: 0;
+.timeline-item.complete .timeline-marker,
+.timeline-item.active .timeline-marker {
+border-color: var(--accent);
+color: var(--accent-light);
+}
+
+.timeline-content {
+padding-top: 4px;
+}
+
+.timeline-content small {
+color: var(--accent-light);
+font-size: 9px;
+font-weight: 700;
+letter-spacing: 2px;
+}
+
+.timeline-content h3 {
+margin: 10px 0 12px;
 
 ```
-background-image:
-    linear-gradient(
-        90deg,
-        rgba(8, 9, 7, 0.95),
-        rgba(8, 9, 7, 0.55),
-        rgba(8, 9, 7, 0.2)
-    ),
-    url("/minecraft-server-website/world.png");
-
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
+font-family: "Cinzel", serif;
+font-size: 24px;
 ```
 
 }
 
-.world-content {
-position: relative;
-z-index: 2;
+.timeline-content p {
+max-width: 600px;
 
 ```
-width: 50%;
-margin-left: 8%;
-```
-
-}
-
-.world-content h2 {
-margin: 20px 0 30px;
-}
-
-.world-content p {
-max-width: 520px;
-
-```
-margin-bottom: 20px;
-
-color: #bcb7aa;
+color: var(--muted);
 line-height: 1.8;
 ```
 
 }
 
-/* ================= PLAY ================= */
+.timeline-status {
+display: inline-block;
 
-.play {
+```
+margin-top: 18px;
+padding: 6px 10px;
+
+border: 1px solid var(--border);
+
+color: var(--muted);
+
+font-size: 8px;
+font-weight: 700;
+letter-spacing: 2px;
+```
+
+}
+
+.timeline-item.complete .timeline-status,
+.timeline-item.active .timeline-status {
+border-color: rgba(185, 138, 75, 0.4);
+color: var(--accent-light);
+}
+
+/* ================= FAQ ================= */
+
+.faq {
 padding: 150px 8%;
+}
+
+.faq-heading {
+max-width: 750px;
+margin-top: 20px;
+}
+
+.faq-heading h2 {
+margin-bottom: 25px;
+}
+
+.faq-heading p {
+color: var(--muted);
+line-height: 1.8;
+}
+
+.faq-list {
+max-width: 900px;
+margin: 70px auto 0;
+}
+
+.faq-list details {
+border-top: 1px solid var(--border);
+}
+
+.faq-list details:last-child {
+border-bottom: 1px solid var(--border);
+}
+
+.faq-list summary {
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+```
+padding: 27px 5px;
+
+cursor: pointer;
+
+list-style: none;
+
+font-family: "Cinzel", serif;
+font-size: 17px;
+```
+
+}
+
+.faq-list summary::-webkit-details-marker {
+display: none;
+}
+
+.faq-list summary span {
+color: var(--accent-light);
+font-family: "Inter", sans-serif;
+font-size: 22px;
+font-weight: 300;
+}
+
+.faq-list details[open] summary span {
+transform: rotate(45deg);
+}
+
+.faq-list details p {
+max-width: 750px;
+
+```
+padding: 0 5px 30px;
+
+color: var(--muted);
+line-height: 1.8;
+```
+
+}
+
+/* ================= STORE ================= */
+
+.store {
+padding: 120px 8%;
 text-align: center;
 
 ```
 background:
     radial-gradient(
         circle at center,
-        #242015 0%,
-        var(--background) 65%
+        #211d13 0%,
+        var(--background) 70%
     );
+
+border-top: 1px solid var(--border);
 ```
 
 }
 
-.play-content {
-max-width: 700px;
+.store-content {
+max-width: 650px;
 margin: auto;
 }
 
-.play h2 {
+.store h2 {
 margin: 20px 0;
 }
 
-.play p {
+.store p {
+max-width: 550px;
+margin: 0 auto 30px;
+
+```
 color: var(--muted);
 line-height: 1.8;
-}
-
-.server-box {
-max-width: 450px;
-
-```
-margin: 40px auto 25px;
-padding: 20px;
-
-border: 1px solid var(--border);
-background: rgba(255,255,255,0.025);
 ```
 
 }
 
-.server-box small {
-color: var(--accent-light);
+/* ================= EXTRA SPACING ================= */
 
-```
-font-size: 9px;
-letter-spacing: 3px;
-```
-
+.play {
+margin-top: 0;
 }
-
-.server-ip {
-margin-top: 10px;
-
-```
-font-family: "Cinzel", serif;
-font-size: 20px;
-letter-spacing: 2px;
-```
-
-}
-
-/* ================= DISCORD ================= */
 
 .discord {
-padding: 80px 8%;
-
-```
-display: flex;
-align-items: center;
-justify-content: space-between;
-gap: 40px;
-
-border-top: 1px solid var(--border);
-border-bottom: 1px solid var(--border);
-
-background: #10110e;
-```
-
+margin-top: 0;
 }
-
-.discord h2 {
-margin-top: 12px;
-font-size: 45px;
-}
-
-.discord p {
-margin-top: 15px;
-color: var(--muted);
-}
-
-.large {
-padding: 18px 30px;
-}
-
-/* ================= FOOTER ================= */
 
 footer {
-padding: 50px 8%;
-
-```
-display: flex;
-align-items: center;
-justify-content: space-between;
-gap: 30px;
-
-color: #77756c;
-```
-
+margin-top: 0;
 }
 
-.footer-logo {
-font-family: "Cinzel", serif;
-font-weight: 800;
-color: var(--text);
-}
-
-.footer-logo span {
-color: var(--accent-light);
-}
-
-footer p {
-font-size: 11px;
-}
-
-.footer-links {
-display: flex;
-gap: 20px;
-}
-
-.footer-links a {
-font-size: 11px;
-}
-
-.footer-links a:hover {
-color: var(--accent-light);
-}
-
-/* ================= MOBILE ================= */
+/* ================= MOBILE ADDITIONS ================= */
 
 @media (max-width: 850px) {
 
 ```
-.navbar nav {
-    display: none;
+.about {
+    padding: 100px 6%;
 }
 
-.navbar {
-    padding: 22px 6%;
+.about-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-top: 40px;
 }
 
-.nav-button {
-    padding: 10px 14px;
+.about-points {
+    grid-template-columns: 1fr;
+    margin-top: 60px;
 }
 
-.hero-content {
-    margin-left: 6%;
-    margin-right: 6%;
+.about-points > div {
+    padding: 25px 0;
 }
 
-.hero h1 {
-    font-size: 54px;
+.feature-row {
+    grid-template-columns: 45px 1fr;
+    gap: 15px;
 }
 
-.hero-description {
+.feature-row p {
+    grid-column: 2;
+}
+
+.gazette,
+.faq {
+    padding: 100px 6%;
+}
+
+.timeline {
+    margin-top: 55px;
+}
+
+.timeline-item {
+    grid-template-columns: 42px 1fr;
+    gap: 20px;
+}
+
+.timeline-marker {
+    width: 42px;
+    height: 42px;
+}
+
+.timeline::before {
+    left: 20px;
+}
+
+.timeline-content h3 {
+    font-size: 20px;
+}
+
+.faq-list {
+    margin-top: 50px;
+}
+
+.faq-list summary {
     font-size: 15px;
+    gap: 20px;
 }
 
-.intro-grid {
-    grid-template-columns: 1fr;
-    gap: 35px;
-}
-
-.feature-grid {
-    grid-template-columns: 1fr;
-}
-
-.feature-card {
-    min-height: 350px;
-}
-
-.world-content {
-    width: auto;
-    margin: 0 8%;
-}
-
-.discord {
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-footer {
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.scroll-indicator {
-    display: none;
+.store {
+    padding: 100px 6%;
 }
 ```
 
