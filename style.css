@@ -124,7 +124,7 @@ min-height: 100vh;
 display: flex;
 align-items: center;
 
-background-image: url("images/hero.png");
+background-image: url("./hero.png");
 background-size: cover;
 background-position: center;
 ```
@@ -430,15 +430,15 @@ background:
 }
 
 .survival-card {
-background-image: url("images/survival.png");
+    background-image: url("./survival.png");
 }
 
 .build-card {
-background-image: url("images/builds.png");
+    background-image: url("./builds.png");
 }
 
 .explore-card {
-background-image: url("images/world.png");
+    background-image: url("./world.png");
 }
 
 .card-number {
@@ -503,7 +503,7 @@ background-image:
         rgba(8, 9, 7, 0.55),
         rgba(8, 9, 7, 0.2)
     ),
-    url("images/world.png");
+    url("./world.png");
 
 background-size: cover;
 background-position: center;
