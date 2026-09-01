@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -6,10 +7,11 @@
 
   <title>OceanSurvival | Minecraft Ocean-Only Survival</title>
 
-  <meta
-    name="description"
-    content="OceanSurvival is a pure ocean-only Minecraft survival server. Build islands, sail the seas, create pirate fleets, and survive where there is no land."
-  >
+<meta
+name="description"
+content="OceanSurvival is a pure ocean-only Minecraft survival server. Build islands, sail the seas, create pirate fleets, and survive where there is no land."
+
+>
 
   <link rel="icon" href="favicon.png">
   <link rel="stylesheet" href="style.css">
@@ -23,618 +25,626 @@
 
   <header class="navbar">
 
-    <a class="logo" href="#home">
-      <span>OCEAN</span>
-      <b>SURVIVAL</b>
-    </a>
+```
+<a class="logo" href="#home">
+  <span>OCEAN</span>
+  <b>SURVIVAL</b>
+</a>
 
-    <nav>
-      <a href="#about">About</a>
-      <a href="#features">Features</a>
-      <a href="#world">The World</a>
-      <a href="#faq">FAQ</a>
-    </nav>
+<nav>
+  <a href="#about">About</a>
+  <a href="#features">Features</a>
+  <a href="#world">The World</a>
+  <a href="#faq">FAQ</a>
+</nav>
 
-    <a
-      class="nav-button"
-      href="https://discord.gg/9SEaSjxTkg"
-      target="_blank"
-      rel="noopener"
-    >
-      JOIN DISCORD
-    </a>
+<a
+  class="nav-button"
+  href="https://discord.gg/9SEaSjxTkg"
+  target="_blank"
+  rel="noopener"
+>
+  JOIN DISCORD
+</a>
+```
 
   </header>
-
 
   <!-- ================= HERO ================= -->
 
   <main>
 
-    <section id="home" class="hero">
+```
+<section id="home" class="hero">
 
-      <div class="hero-bg"></div>
-      <div class="hero-vignette"></div>
-      <div class="waves"></div>
+  <div class="hero-bg"></div>
+  <div class="hero-vignette"></div>
+  <div class="waves"></div>
 
-      <div class="hero-content">
+  <div class="hero-content">
 
-        <div class="eyebrow">
-          <span class="pulse"></span>
-          THE OCEAN IS YOUR WORLD
-        </div>
+    <div class="eyebrow">
+      <span class="pulse"></span>
+      THE OCEAN IS YOUR WORLD
+    </div>
 
-        <h1>
-          NO LAND.<br>
-          <em>NO LIMITS.</em>
-        </h1>
+    <h1>
+      NO LAND.<br>
+      <em>NO LIMITS.</em>
+    </h1>
 
-        <p class="hero-copy">
-          Welcome to <strong>OceanSurvival</strong> —
-          a Minecraft survival server where the entire world
-          is ocean.
+    <p class="hero-copy">
+      Welcome to <strong>OceanSurvival</strong> —
+      a Minecraft survival server where the entire world
+      is ocean.
 
-          Build your own island, sail into the unknown,
-          or disappear beneath the waves.
-        </p>
+      Build your own island, sail into the unknown,
+      or disappear beneath the waves.
+    </p>
 
-        <div class="hero-actions">
+    <div class="hero-actions">
 
-          <a class="button primary" href="#play">
-            PLAY NOW <span>→</span>
-          </a>
+      <a class="button primary" href="#play">
+        PLAY NOW <span>→</span>
+      </a>
 
-          <a
-            class="button ghost"
-            href="https://discord.gg/9SEaSjxTkg"
-            target="_blank"
-            rel="noopener"
-          >
-            JOIN OUR DISCORD
-          </a>
+      <a
+        class="button ghost"
+        href="https://discord.gg/9SEaSjxTkg"
+        target="_blank"
+        rel="noopener"
+      >
+        JOIN OUR DISCORD
+      </a>
 
-        </div>
+    </div>
 
 
-        <div class="server-card">
+    <!-- ================= SERVER STATUS ================= -->
 
-          <div class="status">
-            <span></span>
-            ONLINE
-          </div>
+    <div class="server-card">
 
-          <div>
-            <small>JAVA SERVER</small>
-            <strong>play.oceansurvival.net</strong>
-          </div>
-
-          <button
-            class="copy-ip"
-            data-copy="play.oceansurvival.net"
-          >
-            COPY IP
-          </button>
-
-        </div>
-
+      <div class="status online" id="server-status">
+        <span></span>
+        ONLINE
       </div>
 
-
-      <div class="scroll">
-        SCROLL TO DIVE
-        <span>↓</span>
+      <div>
+        <small>JAVA SERVER</small>
+        <strong>play.oceansurvival.net</strong>
       </div>
 
-    </section>
-
-
-    <!-- ================= ABOUT ================= -->
-
-    <section id="about" class="intro section">
-
-      <div class="section-kicker">
-        01 / THE CONCEPT
+      <div>
+        <small>PLAYERS ONLINE</small>
+        <strong id="player-count">—</strong>
       </div>
 
-      <div class="intro-grid">
+      <button
+        class="copy-ip"
+        data-copy="play.oceansurvival.net"
+      >
+        COPY IP
+      </button>
 
-        <div>
-          <h2>
-            MINECRAFT,<br>
-            <em>WITHOUT LAND.</em>
-          </h2>
-        </div>
+    </div>
 
-        <div class="intro-text">
+  </div>
 
-          <p class="lead">
-            What happens when you remove the biggest
-            thing Minecraft has always given you?
-          </p>
 
-          <p>Land.</p>
+  <div class="scroll">
+    SCROLL TO DIVE
+    <span>↓</span>
+  </div>
 
-          <p>
-            Every island has value.
-            Every journey matters.
-            Every piece of land you build becomes
-            something you created yourself.
-          </p>
+</section>
 
-          <p>
-            OceanSurvival is pure survival with a
-            completely different starting point —
-            <strong>
-              you have to make your own place
-              in an endless sea.
-            </strong>
-          </p>
 
-        </div>
+<!-- ================= ABOUT ================= -->
 
-      </div>
+<section id="about" class="intro section">
 
+  <div class="section-kicker">
+    01 / THE CONCEPT
+  </div>
 
-      <div class="stats">
+  <div class="intro-grid">
 
-        <div>
-          <strong>∞</strong>
-          <span>OCEAN TO EXPLORE</span>
-        </div>
-
-        <div>
-          <strong>0</strong>
-          <span>MAINLANDS</span>
-        </div>
-
-        <div>
-          <strong>1</strong>
-          <span>SHARED WORLD</span>
-        </div>
-
-        <div>
-          <strong>100%</strong>
-          <span>SURVIVAL</span>
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- ================= FEATURES ================= -->
-
-    <section id="features" class="features section">
-
-      <div class="section-kicker">
-        02 / SURVIVE THE SEA
-      </div>
-
-      <div class="heading-row">
-
-        <div>
-          <h2>
-            MAKE THE OCEAN<br>
-            <em>YOUR HOME.</em>
-          </h2>
-        </div>
-
-        <p>
-          There is no predefined way to play.
-          Build, explore, trade, sail and create
-          your own story.
-        </p>
-
-      </div>
-
-
-      <div class="feature-grid">
-
-
-        <article class="feature-card card-island">
-
-          <div class="card-overlay"></div>
-
-          <div class="card-content">
-
-            <span>01</span>
-
-            <h3>
-              BUILD AN ISLAND
-            </h3>
-
-            <p>
-              Start with almost nothing and turn
-              a tiny patch of land into a home,
-              settlement, fortress or floating city.
-            </p>
-
-          </div>
-
-        </article>
-
-
-        <article class="feature-card card-sail">
-
-          <div class="card-overlay"></div>
-
-          <div class="card-content">
-
-            <span>02</span>
-
-            <h3>
-              SAIL THE SEAS
-            </h3>
-
-            <p>
-              With ocean in every direction,
-              travelling becomes part of survival.
-              Pack your supplies and set a course.
-            </p>
-
-          </div>
-
-        </article>
-
-
-        <article class="feature-card card-pirate">
-
-          <div class="card-overlay"></div>
-
-          <div class="card-content">
-
-            <span>03</span>
-
-            <h3>
-              CREATE YOUR FLEET
-            </h3>
-
-            <p>
-              Build ships, connect with other players
-              and create your own pirate crew,
-              navy or trading empire.
-            </p>
-
-          </div>
-
-        </article>
-
-
-        <article class="feature-card card-depth">
-
-          <div class="card-overlay"></div>
-
-          <div class="card-content">
-
-            <span>04</span>
-
-            <h3>
-              GO BENEATH
-            </h3>
-
-            <p>
-              The surface is only half the world.
-              Explore the depths, underwater ruins
-              and whatever you can find below.
-            </p>
-
-          </div>
-
-        </article>
-
-
-      </div>
-
-    </section>
-
-
-    <!-- ================= WORLD ================= -->
-
-    <section id="world" class="world">
-
-      <div class="world-image"></div>
-
-      <div class="world-content">
-
-        <div class="section-kicker">
-          03 / THE WORLD
-        </div>
-
-        <h2>
-          EVERY HORIZON<br>
-          <em>IS OPEN.</em>
-        </h2>
-
-        <p>
-          Imagine looking in every direction
-          and seeing nothing but water.
-        </p>
-
-        <p>
-          That is OceanSurvival.
-          No normal mainland.
-          No easy road to your neighbour.
-
-          Just islands, ships, deep water and
-          an enormous world waiting to be shaped.
-        </p>
-
-        <div class="quote">
-          “THE HARDEST PART OF SURVIVAL<br>
-          IS FINDING SOMEWHERE TO START.”
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- ================= FIRST DAY ================= -->
-
-    <section class="steps section">
-
-      <div class="section-kicker">
-        04 / YOUR FIRST DAY
-      </div>
-
+    <div>
       <h2>
-        FROM <em>NOTHING</em><br>
-        TO SOMETHING.
+        MINECRAFT,<br>
+        <em>WITHOUT LAND.</em>
       </h2>
+    </div>
+
+    <div class="intro-text">
+
+      <p class="lead">
+        What happens when you remove the biggest
+        thing Minecraft has always given you?
+      </p>
+
+      <p>Land.</p>
+
+      <p>
+        Every island has value.
+        Every journey matters.
+        Every piece of land you build becomes
+        something you created yourself.
+      </p>
+
+      <p>
+        OceanSurvival is pure survival with a
+        completely different starting point —
+        <strong>
+          you have to make your own place
+          in an endless sea.
+        </strong>
+      </p>
+
+    </div>
+
+  </div>
 
 
-      <div class="step-grid">
+  <div class="stats">
 
-        <div class="step">
-          <b>01</b>
-          <h3>FIND A START</h3>
-          <p>
-            Spawn into an ocean world and figure
-            out where you want to settle.
-          </p>
-        </div>
+    <div>
+      <strong>∞</strong>
+      <span>OCEAN TO EXPLORE</span>
+    </div>
 
+    <div>
+      <strong>0</strong>
+      <span>MAINLANDS</span>
+    </div>
 
-        <div class="step">
-          <b>02</b>
-          <h3>GET RESOURCEFUL</h3>
-          <p>
-            Gather what you can, travel between
-            islands and turn the sea into your advantage.
-          </p>
-        </div>
+    <div>
+      <strong>1</strong>
+      <span>SHARED WORLD</span>
+    </div>
 
+    <div>
+      <strong>100%</strong>
+      <span>SURVIVAL</span>
+    </div>
 
-        <div class="step">
-          <b>03</b>
-          <h3>BUILD YOUR HOME</h3>
-          <p>
-            Create an island base, floating settlement,
-            shipyard or something nobody has built before.
-          </p>
-        </div>
+  </div>
+
+</section>
 
 
-        <div class="step">
-          <b>04</b>
-          <h3>MAKE YOUR MARK</h3>
-          <p>
-            Meet players, trade, explore farther
-            and leave something behind for the next sailor.
-          </p>
-        </div>
+<!-- ================= FEATURES ================= -->
 
-      </div>
+<section id="features" class="features section">
 
-    </section>
+  <div class="section-kicker">
+    02 / SURVIVE THE SEA
+  </div>
 
+  <div class="heading-row">
 
-    <!-- ================= FAQ ================= -->
-
-    <section id="faq" class="faq section">
-
-      <div class="section-kicker">
-        05 / QUESTIONS
-      </div>
-
+    <div>
       <h2>
-        FREQUENTLY ASKED<br>
-        <em>QUESTIONS.</em>
+        MAKE THE OCEAN<br>
+        <em>YOUR HOME.</em>
       </h2>
+    </div>
+
+    <p>
+      There is no predefined way to play.
+      Build, explore, trade, sail and create
+      your own story.
+    </p>
+
+  </div>
 
 
-      <div class="faq-list">
+  <div class="feature-grid">
 
-        <details open>
+    <article class="feature-card card-island">
 
-          <summary>
-            What is OceanSurvival?
-            <span>+</span>
-          </summary>
+      <div class="card-overlay"></div>
 
-          <p>
-            OceanSurvival is an ocean-only Minecraft
-            survival server.
+      <div class="card-content">
 
-            The idea is simple: there is no normal
-            mainland to rely on, so players have to
-            build, explore and survive around the ocean.
-          </p>
+        <span>01</span>
 
-        </details>
-
-
-        <details>
-
-          <summary>
-            What can I build?
-            <span>+</span>
-          </summary>
-
-          <p>
-            Anything you can build in Minecraft.
-            Islands, underwater bases, ports, ships,
-            towns, pirate fleets and huge ocean projects
-            are all part of the idea.
-          </p>
-
-        </details>
-
-
-        <details>
-
-          <summary>
-            Is it pay-to-win?
-            <span>+</span>
-          </summary>
-
-          <p>
-            No.
-
-            OceanSurvival is designed around survival
-            gameplay rather than selling advantages
-            that decide who wins.
-          </p>
-
-        </details>
-
-
-        <details>
-
-          <summary>
-            How do I join?
-            <span>+</span>
-          </summary>
-
-          <p>
-            Connect to
-            <strong>play.oceansurvival.net</strong>
-            on Java Edition.
-
-            You can also join the Discord for
-            announcements and community information.
-          </p>
-
-        </details>
-
-
-        <details>
-
-          <summary>
-            Is Bedrock supported?
-            <span>+</span>
-          </summary>
-
-          <p>
-            Bedrock players can join OceanSurvival as well.
-
-            Check the Discord for the latest connection
-            details and compatibility information.
-          </p>
-
-        </details>
-
-      </div>
-
-    </section>
-
-
-    <!-- ================= PLAY ================= -->
-
-    <section id="play" class="play">
-
-      <div class="play-glow"></div>
-
-      <div class="play-content">
-
-        <div class="section-kicker">
-          06 / YOUR ADVENTURE
-        </div>
-
-        <h2>
-          THE OCEAN<br>
-          <em>IS WAITING.</em>
-        </h2>
+        <h3>
+          BUILD AN ISLAND
+        </h3>
 
         <p>
-          Grab your boat.
-          Find your people.
-          Build something worth finding.
+          Start with almost nothing and turn
+          a tiny patch of land into a home,
+          settlement, fortress or floating city.
         </p>
-
-
-        <div class="ip-box">
-
-          <small>
-            SERVER ADDRESS
-          </small>
-
-          <strong>
-            play.oceansurvival.net
-          </strong>
-
-          <button
-            class="button primary copy-ip"
-            data-copy="play.oceansurvival.net"
-          >
-            COPY SERVER IP
-          </button>
-
-        </div>
-
-
-        <a
-          class="button ghost"
-          href="https://discord.gg/9SEaSjxTkg"
-          target="_blank"
-          rel="noopener"
-        >
-          JOIN THE COMMUNITY →
-        </a>
 
       </div>
 
-    </section>
+    </article>
+
+
+    <article class="feature-card card-sail">
+
+      <div class="card-overlay"></div>
+
+      <div class="card-content">
+
+        <span>02</span>
+
+        <h3>
+          SAIL THE SEAS
+        </h3>
+
+        <p>
+          With ocean in every direction,
+          travelling becomes part of survival.
+          Pack your supplies and set a course.
+        </p>
+
+      </div>
+
+    </article>
+
+
+    <article class="feature-card card-pirate">
+
+      <div class="card-overlay"></div>
+
+      <div class="card-content">
+
+        <span>03</span>
+
+        <h3>
+          CREATE YOUR FLEET
+        </h3>
+
+        <p>
+          Build ships, connect with other players
+          and create your own pirate crew,
+          navy or trading empire.
+        </p>
+
+      </div>
+
+    </article>
+
+
+    <article class="feature-card card-depth">
+
+      <div class="card-overlay"></div>
+
+      <div class="card-content">
+
+        <span>04</span>
+
+        <h3>
+          GO BENEATH
+        </h3>
+
+        <p>
+          The surface is only half the world.
+          Explore the depths, underwater ruins
+          and whatever you can find below.
+        </p>
+
+      </div>
+
+    </article>
+
+  </div>
+
+</section>
+
+
+<!-- ================= WORLD ================= -->
+
+<section id="world" class="world">
+
+  <div class="world-image"></div>
+
+  <div class="world-content">
+
+    <div class="section-kicker">
+      03 / THE WORLD
+    </div>
+
+    <h2>
+      EVERY HORIZON<br>
+      <em>IS OPEN.</em>
+    </h2>
+
+    <p>
+      Imagine looking in every direction
+      and seeing nothing but water.
+    </p>
+
+    <p>
+      That is OceanSurvival.
+      No normal mainland.
+      No easy road to your neighbour.
+
+      Just islands, ships, deep water and
+      an enormous world waiting to be shaped.
+    </p>
+
+    <div class="quote">
+      “THE HARDEST PART OF SURVIVAL<br>
+      IS FINDING SOMEWHERE TO START.”
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= FIRST DAY ================= -->
+
+<section class="steps section">
+
+  <div class="section-kicker">
+    04 / YOUR FIRST DAY
+  </div>
+
+  <h2>
+    FROM <em>NOTHING</em><br>
+    TO SOMETHING.
+  </h2>
+
+
+  <div class="step-grid">
+
+    <div class="step">
+      <b>01</b>
+      <h3>FIND A START</h3>
+      <p>
+        Spawn into an ocean world and figure
+        out where you want to settle.
+      </p>
+    </div>
+
+    <div class="step">
+      <b>02</b>
+      <h3>GET RESOURCEFUL</h3>
+      <p>
+        Gather what you can, travel between
+        islands and turn the sea into your advantage.
+      </p>
+    </div>
+
+    <div class="step">
+      <b>03</b>
+      <h3>BUILD YOUR HOME</h3>
+      <p>
+        Create an island base, floating settlement,
+        shipyard or something nobody has built before.
+      </p>
+    </div>
+
+    <div class="step">
+      <b>04</b>
+      <h3>MAKE YOUR MARK</h3>
+      <p>
+        Meet players, trade, explore farther
+        and leave something behind for the next sailor.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= FAQ ================= -->
+
+<section id="faq" class="faq section">
+
+  <div class="section-kicker">
+    05 / QUESTIONS
+  </div>
+
+  <h2>
+    FREQUENTLY ASKED<br>
+    <em>QUESTIONS.</em>
+  </h2>
+
+
+  <div class="faq-list">
+
+    <details open>
+
+      <summary>
+        What is OceanSurvival?
+        <span>+</span>
+      </summary>
+
+      <p>
+        OceanSurvival is an ocean-only Minecraft
+        survival server.
+
+        The idea is simple: there is no normal
+        mainland to rely on, so players have to
+        build, explore and survive around the ocean.
+      </p>
+
+    </details>
+
+
+    <details>
+
+      <summary>
+        What can I build?
+        <span>+</span>
+      </summary>
+
+      <p>
+        Anything you can build in Minecraft.
+        Islands, underwater bases, ports, ships,
+        towns, pirate fleets and huge ocean projects
+        are all part of the idea.
+      </p>
+
+    </details>
+
+
+    <details>
+
+      <summary>
+        Is it pay-to-win?
+        <span>+</span>
+      </summary>
+
+      <p>
+        No.
+
+        OceanSurvival is designed around survival
+        gameplay rather than selling advantages
+        that decide who wins.
+      </p>
+
+    </details>
+
+
+    <details>
+
+      <summary>
+        How do I join?
+        <span>+</span>
+      </summary>
+
+      <p>
+        Connect to
+        <strong>play.oceansurvival.net</strong>
+        on Java Edition.
+
+        You can also join the Discord for
+        announcements and community information.
+      </p>
+
+    </details>
+
+
+    <details>
+
+      <summary>
+        Is Bedrock supported?
+        <span>+</span>
+      </summary>
+
+      <p>
+        Bedrock players can join OceanSurvival as well.
+
+        Check the Discord for the latest connection
+        details and compatibility information.
+      </p>
+
+    </details>
+
+  </div>
+
+</section>
+
+
+<!-- ================= PLAY ================= -->
+
+<section id="play" class="play">
+
+  <div class="play-glow"></div>
+
+  <div class="play-content">
+
+    <div class="section-kicker">
+      06 / YOUR ADVENTURE
+    </div>
+
+    <h2>
+      THE OCEAN<br>
+      <em>IS WAITING.</em>
+    </h2>
+
+    <p>
+      Grab your boat.
+      Find your people.
+      Build something worth finding.
+    </p>
+
+
+    <div class="ip-box">
+
+      <small>
+        SERVER ADDRESS
+      </small>
+
+      <strong>
+        play.oceansurvival.net
+      </strong>
+
+      <button
+        class="button primary copy-ip"
+        data-copy="play.oceansurvival.net"
+      >
+        COPY SERVER IP
+      </button>
+
+    </div>
+
+
+    <a
+      class="button ghost"
+      href="https://discord.gg/9SEaSjxTkg"
+      target="_blank"
+      rel="noopener"
+    >
+      JOIN THE COMMUNITY →
+    </a>
+
+  </div>
+
+</section>
+```
 
   </main>
-
 
   <!-- ================= FOOTER ================= -->
 
   <footer>
 
-    <div class="footer-logo">
-      OCEAN<span>SURVIVAL</span>
-    </div>
+```
+<div class="footer-logo">
+  OCEAN<span>SURVIVAL</span>
+</div>
 
-    <p>
-      © 2026 OceanSurvival.
-      Not affiliated with Mojang Studios.
-    </p>
+<p>
+  © 2026 OceanSurvival.
+  Not affiliated with Mojang Studios.
+</p>
 
-    <div class="footer-links">
+<div class="footer-links">
 
-      <a href="#home">Home</a>
-      <a href="#features">Features</a>
-      <a href="#faq">FAQ</a>
+  <a href="#home">Home</a>
+  <a href="#features">Features</a>
+  <a href="#faq">FAQ</a>
 
-      <a
-        href="https://discord.gg/9SEaSjxTkg"
-        target="_blank"
-        rel="noopener"
-      >
-        Discord
-      </a>
+  <a
+    href="https://discord.gg/9SEaSjxTkg"
+    target="_blank"
+    rel="noopener"
+  >
+    Discord
+  </a>
 
-    </div>
+</div>
+```
 
   </footer>
 
+  <!-- ================= COPY TOAST ================= -->
 
   <div class="toast" id="toast">
     SERVER IP COPIED
   </div>
 
+  <!-- ================= JAVASCRIPT ================= -->
 
   <script src="script.js"></script>
 
